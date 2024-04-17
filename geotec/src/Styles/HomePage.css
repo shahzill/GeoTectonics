@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+.Page1{
+    height: 100vh;
+    background-image: url("../Images/Mountain1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.Page1-Header{
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    display: flex;
+    font-size: 60px;
+    color: white;
+    justify-content: center;
+    padding-top: 200px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Page1-strings{
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    display: flex;
+    font-size: 30px;
+    color: white;
+    justify-content: center;
+    padding-top: 20px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.Page2{
+    height: 100vh;
+
+}
