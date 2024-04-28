@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from "react";
 import "../Styles/Navbar.css";
-import logo from "../Images/Wings.png";
+import logo from "../Images/GeoTecLogo.png";
 import { HashLink as Link } from "react-router-hash-link";
 
 function Navbar() {
@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   const changeBG = () => {
-    if (window.scrollY >= 10) {
+    if (window.scrollY >= 80) {
       setNavColor(true);
     } else {
       setNavColor(false);

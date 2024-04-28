@@ -2,7 +2,7 @@
 
 
 .Page1{
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("../Images/Mountain1.jpg");
     background-size: cover;
     background-position: center;
@@ -34,6 +34,224 @@
 
 
 .Page2{
-    height: 100vh;
+    min-height: 70vh;
+    background-color: black;
+    padding-bottom: 30px;
+}
 
+.Page2-Header{
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    display: flex;
+    font-size: 60px;
+    color: white;
+    justify-content: center;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Page2-AboutUs{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.Page2-AboutUsContent{
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    display: flex;
+    font-size: 23px;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 40px;
+    width: 50%;
+}
+
+.Page2-AboutUsCarousel{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    display: flex;
+    font-size: 23px;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 40px;
+    width: 50%;
+}
+
+
+.Page3{
+    min-height: 100vh;
+    background-image: url("../Images/BG2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.Page3-Header{
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    display: flex;
+    font-size: 60px;
+    color: white;
+    justify-content: center;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Page3-Content{
+    padding: 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 80px;
+    justify-content: center;
+}
+
+.Page3-ServiceBox {
+    height: 550px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust opacity as needed */
+    backdrop-filter: blur(20px); /* Adjust blur radius as needed */
+}
+
+.Page3-ServiceBoxHeader{
+    height: 40px;
+    width: 400px;
+    color: black;
+    padding: 5px 15px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Page3-ServiceBoxHeader2{
+    height: 80px;
+    width: 400px;
+    color: black;
+    padding: 5px 15px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Page3-ServiceBoxDescription{
+    height: 430px;
+    width: 400px;
+    color: black;
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.Page3-ServiceBoxDescription2{
+    height: 390px;
+    width: 400px;
+    color: black;
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.Page3-ServiceBoxDescription{
+    height: 430px;
+    width: 400px;
+    color: black;
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.Page3-ServiceBoxButton{
+    height: 490px;
+    width: 400px;
+    color: black;
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #654321 ;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #775c41 ;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.Page4{
+    min-height: 70vh;
+    background-color: black;
+    padding-bottom: 30px;
+}
+
+.Page4-Header{
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    display: flex;
+    font-size: 60px;
+    color: white;
+    justify-content: center;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Page4-Content{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.Page4-TextContent{
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    display: flex;
+    font-size: 23px;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 40px;
+    width: 50%;
+}
+
+.Page4-AboutUsCarousel{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    display: flex;
+    font-size: 23px;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 40px;
+    width: 50%;
 }
