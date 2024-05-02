@@ -35,7 +35,7 @@ function Navbar() {
         <Link className="Link" smooth to="#AboutUs">
           About Us
         </Link>
-        <Link className="Link" smooth to="#Our-Services">
+        <Link className="Link" smooth to="#Services">
           Services
         </Link>
         <Link className="Link" smooth to="#Portfolio">

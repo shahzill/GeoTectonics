@@ -1,23 +1,13 @@
-import mountain from "../Images/Mountain2.jpg";
-import wings from "../Images/Mountain3.jpg";
-import geotec from "../Images/Mountain4.jpg";
-import geotec1 from "../Images/Mountain5.jpg";
+import Petrography1 from "../Images/PetroGraphy1.png";
+import Petrography2 from "../Images/PetroGraphy2.png";
 
 export const imagesPetroGraphy = [
   {
-    image: wings,
+    image: Petrography1,
     title: "chup",
   },
   {
-    image: mountain,
+    image: Petrography2,
     title: "karo",
-  },
-  {
-    image: geotec,
-    title: "bhai",
-  },
-  {
-    image: geotec1,
-    title: "jaan",
   },
 ];

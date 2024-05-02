@@ -1,0 +1,23 @@
+import structuralMapping1 from "../Images/StructuralMapping1.png";
+import structuralMapping2 from "../Images/StructuralMapping2.png";
+import structuralMapping3 from "../Images/StructuralMapping3.png";
+import structuralMapping4 from "../Images/StructuralMapping4.png";
+
+export const imagesStructuralMapping = [
+  {
+    image: structuralMapping1,
+    title: "chup",
+  },
+  {
+    image: structuralMapping2,
+    title: "karo",
+  },
+  {
+    image: structuralMapping3,
+    title: "bhai",
+  },
+  {
+    image: structuralMapping4,
+    title: "jaan",
+  },
+];

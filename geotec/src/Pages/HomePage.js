@@ -1,11 +1,20 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import Navbar from "../Components/Navbar";
 import "../Styles/HomePage.css";
 import { ReactTyped } from "react-typed";
 import Carousel from "../Components/Carousel";
 import { images } from "../Data/CarouselImages";
 import { imagesPetroGraphy } from "../Data/CarouselPetroGraphy";
+import { imagesASR } from "../Data/CarouselAlkaliSilikaReaction";
+import { imagesRockAndCoreCutting } from "../Data/CarouselRockAndCoreCutting";
+import { imagesPotentialCoreStudy } from "../Data/CarouselPotentialCoreStudy";
+import { imagesStructuralMapping } from "../Data/CarouselStructureMapping";
+import { imagesXray } from "../Data/CarouselXray";
+import { imagesXRF } from "../Data/CarouselXRF";
+import { imagesGeoPhysical } from "../Data/CarouselGeoPhysical";
+import { imagesSEM } from "../Data/CarouselSEM";
 
 function HomePage() {
   return (
@@ -30,7 +39,9 @@ function HomePage() {
         </p>
       </div>
       <div className="Page2">
-        <div className="Page2-Header">About Us</div>
+        <div className="Page2-Header" id="AboutUs">
+          About Us
+        </div>
         <div className="Page2-AboutUs">
           <div className="Page2-AboutUsContent">
             At Geotectonics (Pvt.) Ltd., we are dedicated to delivering
@@ -64,7 +75,9 @@ function HomePage() {
         </div>
       </div>
       <div className="Page3">
-        <div className="Page3-Header">Our Services</div>
+        <div className="Page3-Header" id="Services">
+          Our Services
+        </div>
         <div className="Page3-Content">
           <div className="Page3-ServiceBox">
             <div className="Page3-ServiceBoxHeader">Petrography Analysis</div>
@@ -80,7 +93,9 @@ function HomePage() {
             </div>
             <div className="Page3-ServiceBoxButton">
               <button className="button-5" role="button">
-                Learn More
+                <Link className="Link" smooth to="#PetroGraphy">
+                  Learn more
+                </Link>
               </button>
             </div>
           </div>
@@ -100,7 +115,9 @@ function HomePage() {
             </div>
             <div className="Page3-ServiceBoxButton">
               <button className="button-5" role="button">
-                Learn More
+                <Link className="Link" smooth to="#RockCoreCutting">
+                  Learn more
+                </Link>
               </button>
             </div>
           </div>
@@ -118,7 +135,9 @@ function HomePage() {
             </div>
             <div className="Page3-ServiceBoxButton">
               <button className="button-5" role="button">
-                Learn More
+                <Link className="Link" smooth to="#potentialCoreStudy">
+                  Learn more
+                </Link>
               </button>
             </div>
           </div>
@@ -137,28 +156,28 @@ function HomePage() {
             </div>
             <div className="Page3-ServiceBoxButton">
               <button className="button-5" role="button">
-                Learn More
+                <Link className="Link" smooth to="#asr">
+                  Learn more
+                </Link>
               </button>
             </div>
           </div>
           <div className="Page3-ServiceBox">
             <div className="Page3-ServiceBoxHeader">Structural Mapping</div>
             <div className="Page3-ServiceBoxDescription">
-              Mapping and interpretation of geological structures including
-              folds, faults, fractures, and stratigraphy. Structural mapping
-              aids in understanding subsurface geology, tectonic history, and
-              geomechanical properties for various engineering and exploration
-              purposes. Our team possesses extensive experience in structural
-              mapping and the utilization of drilling information across a wide
-              range of commodities and geological settings. Leveraging our
-              knowledge of regional to small-scale mapping, interpretation of
-              bottom-of-hole geology, and coherent analysis of drilling
-              programs, we excel in generating high-quality structural maps in a
-              time-efficient manner.
+              Our team possesses extensive experience in structural mapping and
+              the utilization of drilling information across a wide range of
+              commodities and geological settings. Leveraging our knowledge of
+              regional to small-scale mapping, interpretation of bottom-of-hole
+              geology, and coherent analysis of drilling programs, we excel in
+              generating high-quality structural maps in a time-efficient
+              manner.
             </div>
             <div className="Page3-ServiceBoxButton">
               <button className="button-5" role="button">
-                Learn More
+                <Link className="Link" smooth to="#structuralMapping">
+                  Learn more
+                </Link>
               </button>
             </div>
           </div>
@@ -174,14 +193,74 @@ function HomePage() {
             </div>
             <div className="Page3-ServiceBoxButton">
               <button className="button-5" role="button">
-                Learn More
+                <Link className="Link" smooth to="#xray">
+                  Learn more
+                </Link>
+              </button>
+            </div>
+          </div>
+          <div className="Page3-ServiceBox">
+            <div className="Page3-ServiceBoxHeader">XRF Spectrometers</div>
+            <div className="Page3-ServiceBoxDescription">
+              X-ray fluorescence (XRF) analyzer demonstrates the ability to
+              conduct both qualitative and quantitative analyses on various
+              samples, including solids, powders, liquids, and others, across a
+              wide range of elements from sodium (Na) to uranium (U). It can
+              analyze concentrations spanning from 100% down to parts per
+              million (ppm).
+            </div>
+            <div className="Page3-ServiceBoxButton">
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#xrf">
+                  Learn more
+                </Link>
+              </button>
+            </div>
+          </div>
+          <div className="Page3-ServiceBox">
+            <div className="Page3-ServiceBoxHeader2">
+              The Scanning Electron Microscope
+            </div>
+            <div className="Page3-ServiceBoxDescription2">
+              The scanning electron microscope (SEM) uses high-energy electron
+              beams to analyze solid specimens. Interactions between electrons
+              and the sample produce signals revealing its external morphology,
+              chemical composition, and crystalline structure. SEM generates 2D
+              images showing spatial variations in these properties. It can
+              image areas from 1 cm to 5 microns wide, with magnifications from
+              20X to 30,000X and a resolution of 50 to 100 nm.
+            </div>
+            <div className="Page3-ServiceBoxButton">
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#sem">
+                  Learn more
+                </Link>
+              </button>
+            </div>
+          </div>
+          <div className="Page3-ServiceBox">
+            <div className="Page3-ServiceBoxHeader2">Geo-Physical Services</div>
+            <div className="Page3-ServiceBoxDescription2">
+              Our company is one of the trusted geophysical consultancies to
+              provide the geophysical surveys by using the latest equipment and
+              updated processing software handled by experts and trained civil
+              engineers, geologists, geophysicists, environmental experts,
+              hydrologists, surveyor, and other associated technicians.
+            </div>
+            <div className="Page3-ServiceBoxButton">
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#gps">
+                  Learn more
+                </Link>
               </button>
             </div>
           </div>
         </div>
       </div>
       <div className="Page4">
-        <div className="Page4-Header">Petrography Analysis</div>
+        <div className="Page4-Header" id="PetroGraphy">
+          Petrography Analysis
+        </div>
         <div className="Page4-Content">
           <div className="Page4-TextContent">
             We deliver ultra-high-resolution insights into both geological and
@@ -198,87 +277,220 @@ function HomePage() {
         </div>
       </div>
       <div className="Page4">
-        <div className="Page4-Header">Rock and Core Cuttings Analysis</div>
+        <div className="Page4-Header" id="RockCoreCutting">
+          Rock and Core Cuttings Analysis
+        </div>
         <div className="Page4-Content">
           <div className="Page4-TextContent">
-            We deliver ultra-high-resolution insights into both geological and
-            non-geological samples, providing a comprehensive understanding of
-            mineral composition, texture, grain characteristics, microfractures,
-            micropores, and structure, presented in both quantitative and
-            qualitative formats. Whether delving into rock formations or mineral
-            assemblages, our dedication to precision and efficiency empowers and
-            elevates the research process.
+            In our Rock and Core Cuttings Analysis services, Geotectonics (Pvt.)
+            Ltd. employs various techniques to uncover crucial information about
+            subsurface formations. By measuring fundamental properties such as
+            porosity, saturation, and permeability, we provide invaluable
+            insights into reservoir potential. Porosity measurements reveal the
+            presence of fluid-filled spaces within rocks, while saturation
+            assessments determine the presence of hydrocarbons within those
+            spaces. Understanding the permeability of these hydrocarbon fluids
+            is vital in assessing their producibility.
+            <br />
+            Additionally, our utilization of core gamma logging establishes a
+            correlation between core depth and logging depth, facilitating
+            accurate depth interpretation. Computed tomography (CT) scans
+            further enhance our analysis by revealing core heterogeneity, aiding
+            in the identification of key geological features. Through our
+            comprehensive approach, we ensure that clients receive detailed and
+            accurate assessments, empowering informed decision-making in oil and
+            gas exploration and production endeavours.
           </div>
           <div className="Page2-AboutUsCarousel">
-            <Carousel images={imagesPetroGraphy} />
+            <Carousel images={imagesRockAndCoreCutting} />
           </div>
         </div>
       </div>
       <div className="Page4">
-        <div className="Page4-Header">Petrography Analysis</div>
+        <div className="Page4-Header" id="potentialCoreStudy">
+          Potential Core Study
+        </div>
         <div className="Page4-Content">
           <div className="Page4-TextContent">
-            We deliver ultra-high-resolution insights into both geological and
-            non-geological samples, providing a comprehensive understanding of
-            mineral composition, texture, grain characteristics, microfractures,
-            micropores, and structure, presented in both quantitative and
-            qualitative formats. Whether delving into rock formations or mineral
-            assemblages, our dedication to precision and efficiency empowers and
-            elevates the research process.
+            Geotectonics (Pvt.) Ltd. offers comprehensive potential core study
+            services aimed at providing in-depth analysis and interpretation of
+            core samples obtained from drilling operations. Our specialized team
+            of geologists conducts meticulous examinations of core samples to
+            evaluate their hydrocarbon potential, reservoir quality, and
+            geological characteristics. Through advanced analytical techniques
+            and expertise in sedimentology, stratigraphy, and reservoir
+            engineering, we deliver valuable insights into reservoir properties,
+            including porosity, permeability, and fluid saturation.
+            <br />
+            Our holistic approach to potential core studies enables clients to
+            make informed decisions regarding reservoir development strategies,
+            production optimization, and resource estimation. At Geotectonics,
+            we are dedicated to delivering high-quality results that support the
+            successful exploration and exploitation of hydrocarbon reserves.
           </div>
           <div className="Page2-AboutUsCarousel">
-            <Carousel images={imagesPetroGraphy} />
+            <Carousel images={imagesPotentialCoreStudy} />
           </div>
         </div>
       </div>
       <div className="Page4">
-        <div className="Page4-Header">Petrography Analysis</div>
+        <div className="Page4-Header" id="asr">
+          Alkali-Silica Reaction (ASR) Assessment
+        </div>
         <div className="Page4-Content">
           <div className="Page4-TextContent">
-            We deliver ultra-high-resolution insights into both geological and
-            non-geological samples, providing a comprehensive understanding of
-            mineral composition, texture, grain characteristics, microfractures,
-            micropores, and structure, presented in both quantitative and
-            qualitative formats. Whether delving into rock formations or mineral
-            assemblages, our dedication to precision and efficiency empowers and
-            elevates the research process.
+            Geotectonics (Pvt.) Ltd. offers specialized Alkali-Silica Reaction
+            (ASR) and Alkali Carbonate Reaction (ACR) assessment services
+            designed to identify and mitigate the risk of concrete deterioration
+            caused by alkali aggregate reaction. Our team of experts employs
+            rigorous testing protocols and advanced analytical techniques to
+            evaluate concrete and aggregate materials for potential ASR-induced
+            damage.
+            <br />
+            Through detailed petrographic analysis and chemical testing, we
+            assess the reactivity of aggregates with alkalis present in concrete
+            mixtures, providing valuable insights into the extent of ASR-related
+            risks. Our comprehensive ASR assessments enable clients to
+            proactively manage the durability and longevity of concrete
+            structures, ensuring compliance with industry standards and
+            regulatory requirements.
           </div>
           <div className="Page2-AboutUsCarousel">
-            <Carousel images={imagesPetroGraphy} />
+            <Carousel images={imagesASR} />
           </div>
         </div>
       </div>
       <div className="Page4">
-        <div className="Page4-Header">Petrography Analysis</div>
+        <div className="Page4-Header" id="structuralMapping">
+          Structural Mapping
+        </div>
         <div className="Page4-Content">
           <div className="Page4-TextContent">
-            We deliver ultra-high-resolution insights into both geological and
-            non-geological samples, providing a comprehensive understanding of
-            mineral composition, texture, grain characteristics, microfractures,
-            micropores, and structure, presented in both quantitative and
-            qualitative formats. Whether delving into rock formations or mineral
-            assemblages, our dedication to precision and efficiency empowers and
-            elevates the research process.
+            Mapping and interpretation of geological structures including folds,
+            faults, fractures, and stratigraphy.
+            <br />
+            Structural mapping aids in understanding subsurface geology,
+            tectonic history, and geomechanical properties for various
+            engineering and exploration purposes.
+            <br />
+            Our team possesses extensive experience in structural mapping and
+            the utilization of drilling information across a wide range of
+            commodities and geological settings. Leveraging our knowledge of
+            regional to small-scale mapping, interpretation of bottom-of-hole
+            geology, and coherent analysis of drilling programs, we excel in
+            generating high-quality structural maps in a time-efficient manner.
+            <br />
+            Services include: <br />• Base mapping <br />• Structural mapping to
+            define the geometry and mineralization controls at regional to mine
+            scales.
+            <br />• Regolith mapping to support regional geochemical programs.
+            <br />• Alteration mapping to define controls on mineralization.{" "}
+            <br />• Interpretation of multiple datasets in an integrated 3D
+            environment
+            <br />• Expert analytical support to solve specific issues (e.g.
+            petrography, alteration, age-dating, fluid inclusions) <br />• 3D
+            Geological Modelling <br />• Remote Sensing <br />• Resource
+            Modelling and Estimation
           </div>
           <div className="Page2-AboutUsCarousel">
-            <Carousel images={imagesPetroGraphy} />
+            <Carousel images={imagesStructuralMapping} />
           </div>
         </div>
       </div>
       <div className="Page4">
-        <div className="Page4-Header">Petrography Analysis</div>
+        <div className="Page4-Header" id="xray">
+          X-ray Diffractometers
+        </div>
         <div className="Page4-Content">
           <div className="Page4-TextContent">
-            We deliver ultra-high-resolution insights into both geological and
-            non-geological samples, providing a comprehensive understanding of
-            mineral composition, texture, grain characteristics, microfractures,
-            micropores, and structure, presented in both quantitative and
-            qualitative formats. Whether delving into rock formations or mineral
-            assemblages, our dedication to precision and efficiency empowers and
-            elevates the research process.
+            Currently, X-ray diffraction stands as the most potent technique for
+            examining the phase and crystal structure of materials. This is
+            achieved by analyzing the diffraction pattern of powder, single
+            crystal, or polycrystal samples, thereby providing insights into the
+            composition of materials as well as the structure or arrangement of
+            atoms or molecules within them.
           </div>
           <div className="Page2-AboutUsCarousel">
-            <Carousel images={imagesPetroGraphy} />
+            <Carousel images={imagesXray} />
+          </div>
+        </div>
+      </div>
+      <div className="Page4">
+        <div className="Page4-Header" id="xrf">
+          XRF Spectrometers
+        </div>
+        <div className="Page4-Content">
+          <div className="Page4-TextContent">
+            X-ray fluorescence (XRF) analyzer demonstrates the ability to
+            conduct both qualitative and quantitative analyses on various
+            samples, including solids, powders, liquids, and others, across a
+            wide range of elements from sodium (Na) to uranium (U). It can
+            analyze concentrations spanning from 100% down to parts per million
+            (ppm).
+          </div>
+          <div className="Page2-AboutUsCarousel">
+            <Carousel images={imagesXRF} />
+          </div>
+        </div>
+      </div>
+      <div className="Page4">
+        <div className="Page4-Header" id="sem">
+          The Scanning Electron Microscope{" "}
+        </div>
+        <div className="Page4-Content">
+          <div className="Page4-TextContent">
+            The scanning electron microscope (SEM) employs a focused beam of
+            high-energy electrons to generate various signals on the surface of
+            solid specimens. These signals, arising from interactions between
+            electrons and the sample, provide valuable information about its
+            external morphology (texture), chemical composition, and crystalline
+            structure and orientation.
+            <br />
+            Typically, data are collected over a defined area of the sample's
+            surface, generating a 2-dimensional image that illustrates spatial
+            variations in these properties. Using conventional SEM techniques,
+            areas ranging from approximately 1 cm to 5 microns in width can be
+            imaged in scanning mode, with magnifications ranging from 20X to
+            around 30,000X and a spatial resolution of 50 to 100 nm.
+          </div>
+          <div className="Page2-AboutUsCarousel">
+            <Carousel images={imagesSEM} />
+          </div>
+        </div>
+      </div>
+      <div className="Page4">
+        <div className="Page4-Header" id="gps">
+          GeoPhysical Services
+        </div>
+        <div className="Page4-Content">
+          <div className="Page4-TextContent">
+            Our company is one of the trusted geophysical consultancies to
+            provide the geophysical surveys by using the latest equipment and
+            updated processing software handled by experts and trained civil
+            engineers, geologists, geophysicists, environmental experts,
+            hydrologists, surveyor, and other associated technicians.
+            <br />
+            Geophysical surveys are being widely conducted across the world for
+            different purposes like water surveys, mineral prospect evaluation,
+            archeological studies, geology, and different environmental studies.
+            These surveys are best to demonstrate the ground conditions in short
+            time and these surveys help to gather a systematic information of
+            large area with less cost as compared to drilling, coring, digging,
+            and tunneling as these activities require a huge cost to perform.
+            Geophysical surveys are best to investigate the insight conditions
+            of near surface environments.
+            <br />
+            Our company provides some of the following geophysical surveys with
+            the best expertise and comprehensive and reliable results.
+            <br />• Borehole logging
+            <br />• Electrical resistivity survey
+            <br />• Magnetic survey
+            <br />• Ground penetrating radar.
+            <br />• Polarization test
+            <br />• Seismic investigations both cross-hole and down-hole
+          </div>
+          <div className="Page2-AboutUsCarousel">
+            <Carousel images={imagesGeoPhysical} />
           </div>
         </div>
       </div>
