@@ -41,9 +41,6 @@ function Navbar() {
         <Link className="Link" smooth to="#Portfolio">
           Portfolio
         </Link>
-        <Link className="Link" smooth to="#Pricing">
-          Pricing
-        </Link>
         <Link className="Link" smooth to="#ContactUs">
           Contact Us
         </Link>

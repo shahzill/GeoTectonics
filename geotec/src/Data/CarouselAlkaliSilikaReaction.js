@@ -9,30 +9,30 @@ import ASR7 from "../Images/ASR7.png";
 export const imagesASR = [
   {
     image: ASR1,
-    title: "chup",
+    title: "",
   },
   {
     image: ASR2,
-    title: "karo",
+    title: "",
   },
   {
     image: ASR3,
-    title: "bhai",
+    title: "",
   },
   {
     image: ASR4,
-    title: "jaan",
+    title: "",
   },
   {
     image: ASR5,
-    title: "jaan",
+    title: "",
   },
   {
     image: ASR6,
-    title: "jaan",
+    title: "",
   },
   {
     image: ASR7,
-    title: "jaan",
+    title: "",
   },
 ];

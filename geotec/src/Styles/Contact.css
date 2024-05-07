@@ -1,0 +1,280 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+
+.contactContainer{
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content: left;
+    text-align: left;
+    padding-top: 3%;
+    max-height: max-content;
+    /* background-image: url("../Imgs/darkneonskyline.jpg"); */
+  /* background-size: cover; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.alert{
+    font-size: 20px;
+    background-color: transparent;
+    color: rgb(1, 238, 1);
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    border: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes buttons{
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+input[type=text] {
+    padding: 10px;
+
+  }
+
+.container h1{
+    padding-bottom: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Red{
+    color: #654321;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactHeading{
+    display: flex;
+    align-items: left;
+    text-align: left;
+    margin-left: 20%;
+}
+  
+.Info{
+    margin-left: 20%;
+    margin-right: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.writtenText{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea{
+    width: 50%;
+
+}
+
+.CButton{
+    margin-bottom: 2%;
+    color: azure;
+    background-color: #654321;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-left: 20%;
+    border: none;
+
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.Info .name{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: left;
+    align-items: left;
+
+}
+
+.FName{
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    
+    border-bottom: #654321 solid 2px;
+    color: azure;
+}
+
+.FName:-webkit-autofill,
+.FName:-webkit-autofill:hover, 
+.FName:-webkit-autofill:focus, 
+.FName:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #23232329;
+}
+
+.LName{
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    border-bottom: #654321 solid 2px;
+    color: azure;
+}
+
+.LName:-webkit-autofill,
+.LName:-webkit-autofill:hover, 
+.LName:-webkit-autofill:focus, 
+.LName:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #23232329;
+}
+
+.cont{
+    background-color: transparent;
+    border: none;
+    border-bottom: #654321 solid 2px;
+    color: azure;
+}
+
+.cont:-webkit-autofill,
+.cont:-webkit-autofill:hover, 
+.cont:-webkit-autofill:focus, 
+.cont:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #23232329;
+}
+
+.sub{
+    background-color: transparent;
+    border: none;
+    border-bottom: #654321 solid 2px;
+    color: azure;
+}
+
+.sub:-webkit-autofill,
+.sub:-webkit-autofill:hover, 
+.sub:-webkit-autofill:focus, 
+.sub:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #23232329;
+}
+.query{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: #654321 solid 2px;
+    color: azure;
+    
+}
+.query:-webkit-autofill,
+.query:-webkit-autofill:hover, 
+.query:-webkit-autofill:focus, 
+.query:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #23232329;
+}
+
+.query::placeholder, .cont::placeholder, .sub::placeholder, .FName::placeholder, .LName::placeholder {
+    color: white; /* Change this to the color you desire */
+}
+
+
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+     .Info{
+        margin-left: 23%;
+        margin-right: 23%;
+
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .contactHeading{
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 80%;
+    }
+    .Info{
+        margin-left: 10%;
+        margin-right: 10%;
+       display: flex;
+       flex-direction: column;
+   }
+   .Info .name{
+    display: flex;
+    flex-direction: row;
+}
+
+   .FName{
+    margin-bottom: 7%;
+    width: 50%;
+   }
+   .LName{
+
+    margin-bottom: 7%;
+   }
+
+   .cont{
+    margin-bottom: 7%;
+   }
+
+   .Sub{
+    margin-bottom: 7%;
+   }
+
+   .CButton{
+        margin-left: 40%;
+        
+   }
+}

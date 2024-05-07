@@ -6,18 +6,18 @@ import geotec1 from "../Images/Mountain5.jpg";
 export const images = [
   {
     image: wings,
-    title: "Brazil",
+    title: "",
   },
   {
     image: mountain,
-    title: "China",
+    title: "",
   },
   {
     image: geotec,
-    title: "France",
+    title: "",
   },
   {
     image: geotec1,
-    title: "France",
+    title: "",
   },
 ];

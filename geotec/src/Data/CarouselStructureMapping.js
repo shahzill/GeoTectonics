@@ -6,18 +6,18 @@ import structuralMapping4 from "../Images/StructuralMapping4.png";
 export const imagesStructuralMapping = [
   {
     image: structuralMapping1,
-    title: "chup",
+    title: "",
   },
   {
     image: structuralMapping2,
-    title: "karo",
+    title: "",
   },
   {
     image: structuralMapping3,
-    title: "bhai",
+    title: "",
   },
   {
     image: structuralMapping4,
-    title: "jaan",
+    title: "",
   },
 ];

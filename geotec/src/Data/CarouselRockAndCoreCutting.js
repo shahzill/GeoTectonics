@@ -4,10 +4,10 @@ import RockAndCoreCutting2 from "../Images/RockAndCoreCutting2.png";
 export const imagesRockAndCoreCutting = [
   {
     image: RockAndCoreCutting1,
-    title: "chup",
+    title: "",
   },
   {
     image: RockAndCoreCutting2,
-    title: "karo",
+    title: "",
   },
 ];

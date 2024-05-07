@@ -4,10 +4,10 @@ import PotentialCoreStudy2 from "../Images/PotentialCoreStudy2.png";
 export const imagesPotentialCoreStudy = [
   {
     image: PotentialCoreStudy1,
-    title: "chup",
+    title: "",
   },
   {
     image: PotentialCoreStudy2,
-    title: "karo",
+    title: "",
   },
 ];

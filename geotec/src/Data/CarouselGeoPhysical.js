@@ -8,26 +8,26 @@ import GPS6 from "../Images/GPS6.png";
 export const imagesGeoPhysical = [
   {
     image: GPS1,
-    title: "chup",
+    title: "",
   },
   {
     image: GPS2,
-    title: "karo",
+    title: "",
   },
   {
     image: GPS3,
-    title: "bhai",
+    title: "",
   },
   {
     image: GPS4,
-    title: "jaan",
+    title: "",
   },
   {
     image: GPS5,
-    title: "jaan",
+    title: "",
   },
   {
     image: GPS6,
-    title: "jaan",
+    title: "",
   },
 ];

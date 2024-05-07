@@ -15,6 +15,7 @@ import { imagesXray } from "../Data/CarouselXray";
 import { imagesXRF } from "../Data/CarouselXRF";
 import { imagesGeoPhysical } from "../Data/CarouselGeoPhysical";
 import { imagesSEM } from "../Data/CarouselSEM";
+import ContactUs from "../Components/Contact";
 
 function HomePage() {
   return (
@@ -97,6 +98,11 @@ function HomePage() {
                   Learn more
                 </Link>
               </button>
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#ContactUs">
+                  Contact us
+                </Link>
+              </button>
             </div>
           </div>
           <div className="Page3-ServiceBox">
@@ -119,6 +125,11 @@ function HomePage() {
                   Learn more
                 </Link>
               </button>
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#ContactUs">
+                  Contact us
+                </Link>
+              </button>
             </div>
           </div>
           <div className="Page3-ServiceBox">
@@ -137,6 +148,11 @@ function HomePage() {
               <button className="button-5" role="button">
                 <Link className="Link" smooth to="#potentialCoreStudy">
                   Learn more
+                </Link>
+              </button>
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#ContactUs">
+                  Contact us
                 </Link>
               </button>
             </div>
@@ -160,6 +176,11 @@ function HomePage() {
                   Learn more
                 </Link>
               </button>
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#ContactUs">
+                  Contact us
+                </Link>
+              </button>
             </div>
           </div>
           <div className="Page3-ServiceBox">
@@ -177,6 +198,11 @@ function HomePage() {
               <button className="button-5" role="button">
                 <Link className="Link" smooth to="#structuralMapping">
                   Learn more
+                </Link>
+              </button>
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#ContactUs">
+                  Contact us
                 </Link>
               </button>
             </div>
@@ -197,6 +223,11 @@ function HomePage() {
                   Learn more
                 </Link>
               </button>
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#ContactUs">
+                  Contact us
+                </Link>
+              </button>
             </div>
           </div>
           <div className="Page3-ServiceBox">
@@ -213,6 +244,11 @@ function HomePage() {
               <button className="button-5" role="button">
                 <Link className="Link" smooth to="#xrf">
                   Learn more
+                </Link>
+              </button>
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#ContactUs">
+                  Contact us
                 </Link>
               </button>
             </div>
@@ -236,6 +272,11 @@ function HomePage() {
                   Learn more
                 </Link>
               </button>
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#ContactUs">
+                  Contact us
+                </Link>
+              </button>
             </div>
           </div>
           <div className="Page3-ServiceBox">
@@ -253,11 +294,16 @@ function HomePage() {
                   Learn more
                 </Link>
               </button>
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#ContactUs">
+                  Contact us
+                </Link>
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <div className="Page4">
+      <div className="Page4-1">
         <div className="Page4-Header" id="PetroGraphy">
           Petrography Analysis
         </div>
@@ -276,7 +322,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="Page4">
+      <div className="Page4-2">
         <div className="Page4-Header" id="RockCoreCutting">
           Rock and Core Cuttings Analysis
         </div>
@@ -292,6 +338,7 @@ function HomePage() {
             spaces. Understanding the permeability of these hydrocarbon fluids
             is vital in assessing their producibility.
             <br />
+            <br />
             Additionally, our utilization of core gamma logging establishes a
             correlation between core depth and logging depth, facilitating
             accurate depth interpretation. Computed tomography (CT) scans
@@ -306,7 +353,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="Page4">
+      <div className="Page4-3">
         <div className="Page4-Header" id="potentialCoreStudy">
           Potential Core Study
         </div>
@@ -322,6 +369,7 @@ function HomePage() {
             engineering, we deliver valuable insights into reservoir properties,
             including porosity, permeability, and fluid saturation.
             <br />
+            <br />
             Our holistic approach to potential core studies enables clients to
             make informed decisions regarding reservoir development strategies,
             production optimization, and resource estimation. At Geotectonics,
@@ -333,7 +381,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="Page4">
+      <div className="Page4-4">
         <div className="Page4-Header" id="asr">
           Alkali-Silica Reaction (ASR) Assessment
         </div>
@@ -346,6 +394,7 @@ function HomePage() {
             rigorous testing protocols and advanced analytical techniques to
             evaluate concrete and aggregate materials for potential ASR-induced
             damage.
+            <br />
             <br />
             Through detailed petrographic analysis and chemical testing, we
             assess the reactivity of aggregates with alkalis present in concrete
@@ -360,7 +409,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="Page4">
+      <div className="Page4-5">
         <div className="Page4-Header" id="structuralMapping">
           Structural Mapping
         </div>
@@ -369,9 +418,11 @@ function HomePage() {
             Mapping and interpretation of geological structures including folds,
             faults, fractures, and stratigraphy.
             <br />
+            <br />
             Structural mapping aids in understanding subsurface geology,
             tectonic history, and geomechanical properties for various
             engineering and exploration purposes.
+            <br />
             <br />
             Our team possesses extensive experience in structural mapping and
             the utilization of drilling information across a wide range of
@@ -379,6 +430,7 @@ function HomePage() {
             regional to small-scale mapping, interpretation of bottom-of-hole
             geology, and coherent analysis of drilling programs, we excel in
             generating high-quality structural maps in a time-efficient manner.
+            <br />
             <br />
             Services include: <br />• Base mapping <br />• Structural mapping to
             define the geometry and mineralization controls at regional to mine
@@ -397,7 +449,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="Page4">
+      <div className="Page4-6">
         <div className="Page4-Header" id="xray">
           X-ray Diffractometers
         </div>
@@ -415,7 +467,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="Page4">
+      <div className="Page4-7">
         <div className="Page4-Header" id="xrf">
           XRF Spectrometers
         </div>
@@ -433,7 +485,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="Page4">
+      <div className="Page4-8">
         <div className="Page4-Header" id="sem">
           The Scanning Electron Microscope{" "}
         </div>
@@ -445,6 +497,7 @@ function HomePage() {
             electrons and the sample, provide valuable information about its
             external morphology (texture), chemical composition, and crystalline
             structure and orientation.
+            <br />
             <br />
             Typically, data are collected over a defined area of the sample's
             surface, generating a 2-dimensional image that illustrates spatial
@@ -458,7 +511,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="Page4">
+      <div className="Page4-9">
         <div className="Page4-Header" id="gps">
           GeoPhysical Services
         </div>
@@ -470,6 +523,7 @@ function HomePage() {
             engineers, geologists, geophysicists, environmental experts,
             hydrologists, surveyor, and other associated technicians.
             <br />
+            <br />
             Geophysical surveys are being widely conducted across the world for
             different purposes like water surveys, mineral prospect evaluation,
             archeological studies, geology, and different environmental studies.
@@ -479,6 +533,7 @@ function HomePage() {
             and tunneling as these activities require a huge cost to perform.
             Geophysical surveys are best to investigate the insight conditions
             of near surface environments.
+            <br />
             <br />
             Our company provides some of the following geophysical surveys with
             the best expertise and comprehensive and reliable results.
@@ -492,6 +547,11 @@ function HomePage() {
           <div className="Page2-AboutUsCarousel">
             <Carousel images={imagesGeoPhysical} />
           </div>
+        </div>
+      </div>
+      <div className="Page5" id="ContactUs">
+        <div className="Page5-ContactUsBox">
+          <ContactUs></ContactUs>
         </div>
       </div>
     </div>

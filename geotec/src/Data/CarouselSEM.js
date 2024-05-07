@@ -6,6 +6,6 @@ import geotec1 from "../Images/Mountain5.jpg";
 export const imagesSEM = [
   {
     image: SEM,
-    title: "chup",
+    title: "",
   },
 ];

@@ -4,10 +4,10 @@ import Petrography2 from "../Images/PetroGraphy2.png";
 export const imagesPetroGraphy = [
   {
     image: Petrography1,
-    title: "chup",
+    title: "",
   },
   {
     image: Petrography2,
-    title: "karo",
+    title: "",
   },
 ];

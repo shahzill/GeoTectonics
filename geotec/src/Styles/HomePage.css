@@ -161,12 +161,15 @@
 }
 
 .Page3-ServiceBoxButton{
-    height: 490px;
+    height: 70px;
     width: 350px;
     color: black;
     padding: 20px;
     font-size: 17px;
     font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .button-5 {
@@ -181,13 +184,13 @@
   cursor: pointer;
   display: inline-flex;
   font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
   margin: 0;
   min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  padding: calc(.875rem - 1px) calc(1rem - 1px);
   position: relative;
   text-decoration: none;
   transition: all 250ms;
@@ -214,10 +217,96 @@
   transform: translateY(0);
 }
 
-.Page4{
+.Page4-1{
     min-height: 70vh;
     background-color: black;
     padding-bottom: 30px;
+    background-image: url("../Images/BG10.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.Page4-2{
+    min-height: 70vh;
+    background-color: black;
+    padding-bottom: 30px;
+    background-image: url("../Images/BG9.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.Page4-3{
+    min-height: 70vh;
+    background-color: black;
+    padding-bottom: 30px;
+    background-image: url("../Images/BG8.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.Page4-4{
+    min-height: 70vh;
+    background-color: black;
+    padding-bottom: 30px;
+    background-image: url("../Images/BG7.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.Page4-5{
+    min-height: 70vh;
+    background-color: black;
+    padding-bottom: 30px;
+    background-image: url("../Images/BG6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.Page4-6{
+    min-height: 70vh;
+    background-color: black;
+    padding-bottom: 30px;
+    background-image: url("../Images/BG5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.Page4-7{
+    min-height: 70vh;
+    background-color: black;
+    padding-bottom: 30px;
+    background-image: url("../Images/BG7.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.Page4-8{
+    min-height: 70vh;
+    background-color: black;
+    padding-bottom: 30px;
+    background-image: url("../Images/BG8.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.Page4-9{
+    min-height: 70vh;
+    background-color: black;
+    padding-bottom: 30px;
+    background-image: url("../Images/BG9.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 
 .Page4-Header{
@@ -258,4 +347,92 @@
     padding: 20px;
     padding-top: 40px;
     width: 50%;
+}
+
+.Page5{
+    background-image: url("../Images/BG10.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+
+@media screen and (max-width: 1100px) {
+    .Page2-AboutUsContent{
+        width: 100%;
+    }
+    
+    .Page2-AboutUsCarousel{
+        width: 100%;
+    }
+    .Page4-TextContent{
+        width: 100%;
+    }
+    
+    .Page4-AboutUsCarousel{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Page1-Header{
+        font-size: 50px;
+    }
+    
+    .Page1-strings{
+        font-size: 25px;
+    }
+
+    .Page2-Header{
+        font-size: 50px;
+    }
+
+    .Page2-AboutUsContent{
+        font-size: 19px;
+    }
+
+    .Page4-TextContent{
+        font-size: 19px;
+    }
+
+    .Page4-Header{
+        font-size: 50px;
+    }
+
+    .Page4-Headeralt{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Page1-Header{
+        font-size: 40px;
+    }
+    
+    .Page1-strings{
+        font-size: 20px;
+    }
+
+    .Page2-Header{
+        font-size: 40px;
+    }
+
+    .Page2-AboutUsContent{
+        font-size: 17px;
+    }
+
+    .Page4-TextContent{
+        font-size: 17px;
+        padding: 10px 10px;
+    }
+
+    .Page4-Header{
+        font-size: 40px;
+        padding: 0px 30px;
+    }
+    .Page4-Headeralt{
+        font-size: 40px;
+        padding: 0px 30px;
+    }
 }
