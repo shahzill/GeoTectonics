@@ -21,6 +21,17 @@
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.Page1-subheading{
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 .Page1-strings{
     font-family: "Oswald", sans-serif;
     font-weight: 700;
@@ -48,6 +59,10 @@
     color: white;
     justify-content: center;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.padding-top-10{
+    margin-top: 50px;
 }
 
 .Page2-AboutUs{
@@ -217,6 +232,51 @@
   transform: translateY(0);
 }
 
+.button-6 {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #654321 ;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+  .button-6:hover,
+  .button-6:focus {
+    background-color: #775c41 ;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  }
+  
+  .button-6:hover {
+    transform: translateY(-1px);
+  }
+  
+  .button-6:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+  }
+
 .Page4-1{
     min-height: 70vh;
     background-color: black;
@@ -308,6 +368,26 @@
     background-repeat: no-repeat;
     background-attachment: fixed; 
 }
+.Page4-10{
+    min-height: 70vh;
+    background-color: black;
+    padding-bottom: 30px;
+    background-image: url("../Images/BG10.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.Page4-11{
+    min-height: 70vh;
+    background-color: black;
+    padding-bottom: 30px;
+    background-image: url("../Images/BG7.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
 
 .Page4-Header{
     font-family: "Oswald", sans-serif;
@@ -376,8 +456,22 @@
 }
 
 @media screen and (max-width: 800px) {
+    .Page1{
+        min-height: 100vh;
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-color: #493E51 ;
+    }
+    
     .Page1-Header{
         font-size: 50px;
+    }
+
+    .Page1-subheading{
+        font-size: 25px;
     }
     
     .Page1-strings{
@@ -408,6 +502,10 @@
 @media screen and (max-width: 600px) {
     .Page1-Header{
         font-size: 40px;
+    }
+
+    .Page1-subheading{
+        font-size: 20px;
     }
     
     .Page1-strings{

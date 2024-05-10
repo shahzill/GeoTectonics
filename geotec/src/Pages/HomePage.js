@@ -15,6 +15,8 @@ import { imagesXray } from "../Data/CarouselXray";
 import { imagesXRF } from "../Data/CarouselXRF";
 import { imagesGeoPhysical } from "../Data/CarouselGeoPhysical";
 import { imagesSEM } from "../Data/CarouselSEM";
+import { imagesGIS } from "../Data/CarouselGIS";
+import { imagesStratigraphy } from "../Data/CarouselStratigraphy";
 import ContactUs from "../Components/Contact";
 
 function HomePage() {
@@ -25,6 +27,10 @@ function HomePage() {
       </React.Fragment>
       <div className="Page1">
         <div className="Page1-Header">GEOTECTONICS</div>
+        <p className="Page1-subheading">
+          Geotectonics (Pvt.) Ltd. offers customized consulting services
+          spanning the entire geological spectrum.
+        </p>
         <p className="Page1-strings">
           <ReactTyped
             className="typing"
@@ -38,6 +44,13 @@ function HomePage() {
             loop
           />
         </p>
+        <div className="Page1-subheading padding-top-10">
+          <button className="button-6" role="button">
+            <Link className="Link" smooth to="#ContactUs">
+              Contact us
+            </Link>
+          </button>
+        </div>
       </div>
       <div className="Page2">
         <div className="Page2-Header" id="AboutUs">
@@ -81,7 +94,7 @@ function HomePage() {
         </div>
         <div className="Page3-Content">
           <div className="Page3-ServiceBox">
-            <div className="Page3-ServiceBoxHeader">Petrography Analysis</div>
+            <div className="Page3-ServiceBoxHeader">Petrography</div>
             <div className="Page3-ServiceBoxDescription">
               We deliver ultra-high-resolution insights into both geological and
               non-geological samples, providing a comprehensive understanding of
@@ -280,8 +293,8 @@ function HomePage() {
             </div>
           </div>
           <div className="Page3-ServiceBox">
-            <div className="Page3-ServiceBoxHeader2">Geo-Physical Services</div>
-            <div className="Page3-ServiceBoxDescription2">
+            <div className="Page3-ServiceBoxHeader">Geo-Physical Services</div>
+            <div className="Page3-ServiceBoxDescription">
               Our company is one of the trusted geophysical consultancies to
               provide the geophysical surveys by using the latest equipment and
               updated processing software handled by experts and trained civil
@@ -301,11 +314,58 @@ function HomePage() {
               </button>
             </div>
           </div>
+          <div className="Page3-ServiceBox">
+            <div className="Page3-ServiceBoxHeader">Sequence Stratigraphy</div>
+            <div className="Page3-ServiceBoxDescription">
+              At GeoTectonics, we specialize in Outcrop Sequence Stratigraphy,
+              Biostratigraphic Sequence Stratigraphy, Seismic Sequence
+              Stratigraphy, and Integrated Sequence Stratigraphy. Dive deep into
+              the geological history of your reservoirs with our precise
+              Reservoir Studies and Well Log Sequence Stratigraphy.
+            </div>
+            <div className="Page3-ServiceBoxButton">
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#Stratigraphy">
+                  Learn more
+                </Link>
+              </button>
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#ContactUs">
+                  Contact us
+                </Link>
+              </button>
+            </div>
+          </div>
+          <div className="Page3-ServiceBox">
+            <div className="Page3-ServiceBoxHeader">GIS-Based Services</div>
+            <div className="Page3-ServiceBoxDescription">
+              Experience seamless Digitization, transforming analog information
+              into digital assets for enhanced accessibility and efficiency.
+              Dive into DEM & Hydrology analysis, unraveling the intricate
+              patterns of terrain and water flow for informed decision-making.
+              Navigate the geological landscape with precision using our
+              GIS-based Geological Mapping services. Safeguard your projects
+              with expert Geological Hazard Zonation, identifying and mitigating
+              risks with confidence.
+            </div>
+            <div className="Page3-ServiceBoxButton">
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#GIS">
+                  Learn more
+                </Link>
+              </button>
+              <button className="button-5" role="button">
+                <Link className="Link" smooth to="#ContactUs">
+                  Contact us
+                </Link>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <div className="Page4-1">
         <div className="Page4-Header" id="PetroGraphy">
-          Petrography Analysis
+          Petrography
         </div>
         <div className="Page4-Content">
           <div className="Page4-TextContent">
@@ -546,6 +606,85 @@ function HomePage() {
           </div>
           <div className="Page2-AboutUsCarousel">
             <Carousel images={imagesGeoPhysical} />
+          </div>
+        </div>
+      </div>
+      <div className="Page4-10">
+        <div className="Page4-Header" id="Stratigraphy">
+          Sequence Stratigraphy
+        </div>
+        <div className="Page4-Content">
+          <div className="Page4-TextContent">
+            At GeoTectonics, we specialize in Outcrop Sequence Stratigraphy,
+            Biostratigraphic Sequence Stratigraphy, Seismic Sequence
+            Stratigraphy, and Integrated Sequence Stratigraphy. Dive deep into
+            the geological history of your reservoirs with our precise Reservoir
+            Studies and Well Log Sequence Stratigraphy.
+            <br />
+            <br />
+            Our team of experts excels in Structural Modeling, unraveling the
+            complexities of subsurface structures. Explore Cyclicity patterns
+            and decode the Paleoenvironment with our advanced techniques.
+            Uncover the mysteries of Paleo-Tectonics and understand the
+            evolution of your geological formations.
+            <br />
+            <br />
+            Whether you're in exploration or production, our services offer
+            invaluable insights to optimize your operations and maximize your
+            reserves.
+            <br />
+            <br />
+            Contact us today to elevate your understanding of the subsurface and
+            drive success in your projects!
+            <br />
+            <br />
+          </div>
+          <div className="Page2-AboutUsCarousel">
+            <Carousel images={imagesStratigraphy} />
+          </div>
+        </div>
+      </div>
+      <div className="Page4-11">
+        <div className="Page4-Header" id="GIS">
+          GIS-Based Services
+        </div>
+        <div className="Page4-Content">
+          <div className="Page4-TextContent">
+            Unlock the full potential of geographical data with Geotectonics.
+            Our GIS-based services offer a diverse range of solutions to meet
+            your needs.
+            <br />
+            <br />
+            Experience seamless Digitization, transforming analog information
+            into digital assets for enhanced accessibility and efficiency. Dive
+            into DEM & Hydrology analysis, unraveling the intricate patterns of
+            terrain and water flow for informed decision-making.
+            <br />
+            <br />
+            Navigate the geological landscape with precision using our GIS-based
+            Geological Mapping services. Safeguard your projects with expert
+            Geological Hazard Zonation, identifying and mitigating risks with
+            confidence.
+            <br />
+            <br />
+            Embark on a journey through time with our Archaeological expertise,
+            uncovering the mysteries of the past. Delve into Subsurface
+            Hydrology to harness the hidden potential of groundwater resources
+            for sustainable development.
+            <br />
+            <br />
+            Elevate your ecological understanding with Remote Sensing-based
+            Ecology Studies, harnessing the power of technology to protect our
+            planet's precious ecosystems.
+            <br />
+            <br />
+            At Geotectonics, we combine expertise with innovation to deliver
+            unparalleled results. Contact us today to revolutionize your
+            approach to spatial analysis and exploration! <br />
+            <br />
+          </div>
+          <div className="Page2-AboutUsCarousel">
+            <Carousel images={imagesGIS} />
           </div>
         </div>
       </div>
