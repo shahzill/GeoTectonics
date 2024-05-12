@@ -11,8 +11,9 @@
 
 img{
 	height: 70px;
-	width: 70px;
+	width: 170px;
 	margin-top: -20px;
+	margin-right: -80px;
 }
 
 header {
@@ -113,5 +114,12 @@ header.active{
 
 	nav Link {
 		font-size: 1.5rem;
+	}
+}
+@media screen and (max-width: 600px) {
+    img{
+		height: 60px;
+		width: 100px;
+		margin-top: -20px;
 	}
 }
