@@ -35,8 +35,11 @@ function HomePage() {
           <ReactTyped
             className="typing"
             strings={[
-              "Shaping Earth's Evolution",
-              "Unveiling Geological Mysteries",
+              "Commitment to Excellence",
+              "Ethical Practice",
+              "Professional Development",
+              "Scientific Integrity",
+              "Innovation",
               "Forging the Landscape of Tomorrow",
             ]}
             typeSpeed={100}
@@ -69,19 +72,15 @@ function HomePage() {
             with us for unparalleled expertise and reliable geological insights.
             <br />
             <br />
-            Assessing natural resources is crucial for understanding their
-            availability, sustainability, and impact on society. Geotectonics
-            (Pvt.) Ltd. experts likely use a combination of geological,
-            geophysical, and geochemical methods, coupled with time honoured
-            instrumentation and cutting-edge technology, to evaluate resources
-            such as fossil fuels, water, minerals, and even renewable energy
-            sources like geothermal. Our expertise can help to take decisions
-            about resource management, conservation efforts, and sustainable
-            development practices. Our clients are at the centre of everything
-            we do. We tailor creative solutions to meet their specific needs,
-            not only in traditional upstream oil and gas sectors but also by
-            fostering opportunities across a range of other industries and
-            academic institutes.
+            Geotectonics Pvt. Limited is defined by a concise manifesto that
+            outlines our core principles: commitment to excellence, ethical
+            practice, scientific integrity, client focus, innovation, and
+            professional development. We strive for excellence in every aspect
+            of geological consulting, adhere to ethical standards, uphold
+            scientific integrity, prioritize understanding and meeting client
+            needs, embrace innovation, and commit to continuous learning and
+            development. These principles guide our operations, ensuring we
+            deliver superior results and remain at the forefront of our field.
           </div>
           <div className="Page2-AboutUsCarousel">
             <Carousel images={images} />

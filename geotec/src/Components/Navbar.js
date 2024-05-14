@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from "react";
 import "../Styles/Navbar.css";
-import logo from "../Images/logo.png";
+import logo from "../Images/PVT.png";
 import { HashLink as Link } from "react-router-hash-link";
 
 function Navbar() {
